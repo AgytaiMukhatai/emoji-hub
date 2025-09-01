@@ -120,6 +120,29 @@ body {
   cursor: not-allowed;
 }
 
+@keyframes pulse {
+  0% {
+    background-color: #e5e5ea;
+  }
+
+  50% {
+    background-color: #f2f2f7;
+  }
+
+  100% {
+    background-color: #e5e5ea;
+  }
+}
+
+.skeleton-card {
+  background: #fff;
+  border-radius: 16px;
+  height: 100px;
+  padding: 16px;
+  animation: 1.5s infinite pulse;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .05);
+}
+
 /* [project]/src/app/home.css [app-client] (css) */
 .home-container {
   background: linear-gradient(135deg, #f9f9f9, #f2f2f7);

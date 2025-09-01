@@ -122,4 +122,21 @@ body {
     opacity: 0.5;
     cursor: not-allowed;
   }
+
+/* 🔄 Анимация мерцания */
+@keyframes pulse {
+    0% { background-color: #e5e5ea; }
+    50% { background-color: #f2f2f7; }
+    100% { background-color: #e5e5ea; }
+  }
+  
+  /* 📦 Скелетон-карточка */
+  .skeleton-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 16px;
+    height: 100px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    animation: pulse 1.5s infinite;
+  }
   

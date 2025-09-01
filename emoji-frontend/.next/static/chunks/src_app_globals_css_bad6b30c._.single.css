@@ -120,4 +120,27 @@ body {
   cursor: not-allowed;
 }
 
+@keyframes pulse {
+  0% {
+    background-color: #e5e5ea;
+  }
+
+  50% {
+    background-color: #f2f2f7;
+  }
+
+  100% {
+    background-color: #e5e5ea;
+  }
+}
+
+.skeleton-card {
+  background: #fff;
+  border-radius: 16px;
+  height: 100px;
+  padding: 16px;
+  animation: 1.5s infinite pulse;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .05);
+}
+
 /*# sourceMappingURL=src_app_globals_css_bad6b30c._.single.css.map*/
