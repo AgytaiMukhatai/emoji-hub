@@ -6,7 +6,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -15,9 +15,6 @@ app.add_middleware(
 EMOJI_API = "https://emojihub.yurace.pro/api/all"
 
 
-@app.get("/")
-def root():
-    return {"message": "Hello from FastAPI 👋"}
 
 
 @app.get("/emoji")

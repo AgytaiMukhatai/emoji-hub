@@ -35,7 +35,10 @@ export default function EmojiList() {
       if (debouncedSearch) params.append("search", debouncedSearch);
       if (category) params.append("category", category);
 
-      const res = await fetch(`http://127.0.0.1:8000/emoji?${params.toString()}`);
+      
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}?${params.toString()}`);
+
+
       if (!res.ok) throw new Error("Ошибка загрузки");
       return res.json();
     },
