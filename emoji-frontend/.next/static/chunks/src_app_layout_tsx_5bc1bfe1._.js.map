@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/agytaimukhatai/Desktop/emoji_hub/emoji-frontend/src/app/layout.tsx"],"sourcesContent":["\"use client\";\n\nimport { QueryClient, QueryClientProvider } from \"@tanstack/react-query\";\nimport { ReactNode, useState } from \"react\";\n\n\nimport \"./globals.css\";\nimport \"./home.css\";\n\nexport default function RootLayout({ children }: { children: ReactNode }) {\n  const [queryClient] = useState(() => new QueryClient());\n\n  return (\n    <html lang=\"en\">\n      <body>\n        <QueryClientProvider client={queryClient}>\n          {children}\n        </QueryClientProvider>\n      </body>\n    </html>\n  );\n}\n"],"names":[],"mappings":";;;;;AAEA;AAAA;AACA;;;AAHA;;;;;AASe,SAAS,WAAW,KAAqC;QAArC,EAAE,QAAQ,EAA2B,GAArC;;IACjC,MAAM,CAAC,YAAY,GAAG,IAAA,yKAAQ;+BAAC,IAAM,IAAI,+LAAW;;IAEpD,qBACE,6LAAC;QAAK,MAAK;kBACT,cAAA,6LAAC;sBACC,cAAA,6LAAC,gNAAmB;gBAAC,QAAQ;0BAC1B;;;;;;;;;;;;;;;;AAKX;GAZwB;KAAA","debugId":null}}]
-}
