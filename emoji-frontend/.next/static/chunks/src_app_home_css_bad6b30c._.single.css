@@ -1,0 +1,64 @@
+/* [project]/src/app/home.css [app-client] (css) */
+.home-container {
+  background: linear-gradient(135deg, #f9f9f9, #f2f2f7);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+}
+
+.home-card {
+  text-align: center;
+  background: #fff;
+  border-radius: 20px;
+  max-width: 500px;
+  padding: 40px;
+  animation: 1s fadeIn;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+.home-title {
+  color: #111;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.home-subtitle {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.home-button {
+  color: #fff;
+  cursor: pointer;
+  background: #007aff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all .3s;
+}
+
+.home-button:hover {
+  background: #005ecb;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*# sourceMappingURL=src_app_home_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 21, "column": 0}, "map": {"version":3,"sources":["file:///Users/agytaimukhatai/Desktop/emoji_hub/emoji-frontend/src/app/page.tsx"],"sourcesContent":["import { QueryClient, QueryClientProvider } from \"@tanstack/react-query\";\nimport EmojiList from \"./components/EmojiList\";\n\nconst queryClient = new QueryClient();\n\nexport default function App() {\n  return (\n    <QueryClientProvider client={queryClient}>\n      <div className=\"p-6\">\n        <EmojiList />\n      </div>\n    </QueryClientProvider>\n  );\n}\n"],"names":[],"mappings":";;;;;AAAA;AAAA;AACA;;;;AAEA,MAAM,cAAc,IAAI,4LAAW;AAEpB,SAAS;IACtB,qBACE,8OAAC,6MAAmB;QAAC,QAAQ;kBAC3B,cAAA,8OAAC;YAAI,WAAU;sBACb,cAAA,8OAAC,0IAAS;;;;;;;;;;;;;;;AAIlB","debugId":null}}]
+}

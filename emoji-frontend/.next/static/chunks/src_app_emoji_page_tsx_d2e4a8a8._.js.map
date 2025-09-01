@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/agytaimukhatai/Desktop/emoji_hub/emoji-frontend/src/app/emoji/page.tsx"],"sourcesContent":["\"use client\";\n\nimport EmojiList from \"@/components/EmojiList\";\n\nexport default function EmojiPage() {\n  return (\n    <div style={{ padding: \"20px\" }}>\n      <EmojiList />\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;;;;;;AAAA;;;AAIe,SAAS;IACtB,qBACE,6LAAC;QAAI,OAAO;YAAE,SAAS;QAAO;kBAC5B,cAAA,6LAAC;;;;;;;;;;AAGP;KANwB","debugId":null}}]
+}
