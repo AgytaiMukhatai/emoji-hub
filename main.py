@@ -25,30 +25,23 @@ def get_emojis(
     page: int = Query(1, ge=1, description="Page number (>=1)"),
     page_size: int = Query(20, ge=1, le=100, description="Items per page (1-100)")
 ):
-    """
-    Получаем эмодзи из EmojiHub и добавляем:
-    - поиск по имени
-    - фильтр по категории
-    - сортировку
-    - пагинацию
-    - список категорий (всегда полный)
-    """
+    # Getting data
     response = requests.get(EMOJI_API)
     if response.status_code != 200:
         return {"error": "Failed to fetch emojis"}
 
-    all_data = response.json()  # полный список
+    all_data = response.json()  # Full spisok
     data = all_data[:]          # рабочая копия
 
-    # 🔍 Поиск
+    # Search
     if search:
         data = [e for e in data if search.lower() in e["name"].lower()]
 
-    # 🗂 Фильтрация по категории (гибкая проверка)
+    # Filter
     if category:
         data = [e for e in data if category.lower() in e["category"].lower()]
 
-    # ↕️ Сортировка
+    # Sort
     if sort == "name":
         data.sort(key=lambda e: e["name"])
     elif sort == "category":
@@ -56,12 +49,12 @@ def get_emojis(
 
     total = len(data)
 
-    # 📄 Пагинация
+    # Pages
     start = (page - 1) * page_size
     end = start + page_size
     paginated = data[start:end]
 
-    # 🔖 Всегда возвращаем все категории из полного списка
+    # All categories
     categories = sorted(set(e["category"] for e in all_data))
 
     return {

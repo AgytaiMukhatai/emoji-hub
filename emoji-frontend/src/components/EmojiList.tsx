@@ -57,7 +57,7 @@ export default function EmojiList() {
 
   return (
     <div className="emoji-container">
-      {/* 🔍 Поиск */}
+      {/* Search*/}
       <input
         type="text"
         placeholder="Поиск эмодзи..."
@@ -69,7 +69,7 @@ export default function EmojiList() {
         }}
       />
 
-      {/* 🗂 Категории */}
+      {/* Categories */}
       <div className="categories">
         <button
           className={`btn ${category === "" ? "btn-red" : "btn-outline"}`}
@@ -94,7 +94,7 @@ export default function EmojiList() {
         ))}
       </div>
 
-      {/* 😀 Список эмодзи */}
+      {/* List */}
       <div className="emoji-grid">
         {data.items.map((emoji: Emoji, i: number) => (
           <div key={i} className="emoji-card">
@@ -107,7 +107,7 @@ export default function EmojiList() {
         ))}
       </div>
 
-      {/* 📄 Пагинация */}
+      {/* Pages */}
       <div className="pagination">
         <button
           className="btn btn-outline"

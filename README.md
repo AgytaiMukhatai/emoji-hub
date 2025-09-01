@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+EmojiHub
 
-## Getting Started
+Удобная платформа для поиска, использования и интеграции эмодзи в проекты, чаты и приложения. 🌐✨
+Она позволяет быстро находить нужный эмодзи, копировать его и использовать.
+Этот проект был создан для встпительного технического задания от nfactorial чтоьы учавствовать на конкурсе грантов TechOrda.
 
-First, run the development server:
+Устанвка и запуск:
 
-```bash
+git clone https://github.com/AgytaiMukhatai/emoji-hub.git
+cd emoji-hub
+pip install requirements.txt
+uvicorn main:app --reload --port 8000
+Бекенд будет запущен на: http://localhost:8000
+
+На новом терминале чтобы запустить фронтенд:
+cd emoji-frontend
+np install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Процесс проектирования:
